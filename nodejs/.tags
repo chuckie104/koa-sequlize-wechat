@@ -1,0 +1,59 @@
+name	/Users/gaojian/Desktop/nodejs/package.json	/^  "name": "node",$/;"	function	line:2
+version	/Users/gaojian/Desktop/nodejs/package.json	/^  "version": "1.0.0",$/;"	function	line:3
+description	/Users/gaojian/Desktop/nodejs/package.json	/^  "description": "",$/;"	function	line:4
+main	/Users/gaojian/Desktop/nodejs/package.json	/^  "main": "index.js",$/;"	function	line:5
+scripts	/Users/gaojian/Desktop/nodejs/package.json	/^  "scripts": {$/;"	function	line:6
+start	/Users/gaojian/Desktop/nodejs/package.json	/^    "start": "node start.js"$/;"	function	line:7
+author	/Users/gaojian/Desktop/nodejs/package.json	/^  "author": "",$/;"	function	line:9
+license	/Users/gaojian/Desktop/nodejs/package.json	/^  "license": "ISC",$/;"	function	line:10
+dependencies	/Users/gaojian/Desktop/nodejs/package.json	/^  "dependencies": {$/;"	function	line:11
+babel-core	/Users/gaojian/Desktop/nodejs/package.json	/^    "babel-core": "6.13.2",$/;"	function	line:12
+babel-polyfill	/Users/gaojian/Desktop/nodejs/package.json	/^    "babel-polyfill": "6.13.0",$/;"	function	line:13
+babel-preset-es2015-node6	/Users/gaojian/Desktop/nodejs/package.json	/^    "babel-preset-es2015-node6": "0.3.0",$/;"	function	line:14
+babel-preset-stage-3	/Users/gaojian/Desktop/nodejs/package.json	/^    "babel-preset-stage-3": "6.5.0",$/;"	function	line:15
+koa	/Users/gaojian/Desktop/nodejs/package.json	/^    "koa": "2.0.0",$/;"	function	line:16
+sequelize	/Users/gaojian/Desktop/nodejs/package.json	/^    "sequelize": "3.24.1",$/;"	function	line:17
+mysql	/Users/gaojian/Desktop/nodejs/package.json	/^    "mysql": "2.11.1"$/;"	function	line:18
+devDependencies	/Users/gaojian/Desktop/nodejs/package.json	/^  "devDependencies": {$/;"	function	line:20
+koa-bodyparser	/Users/gaojian/Desktop/nodejs/package.json	/^    "koa-bodyparser": "^2.3.0",$/;"	function	line:21
+koa-router	/Users/gaojian/Desktop/nodejs/package.json	/^    "koa-router": "^7.1.0"$/;"	function	line:22
+config.database	/Users/gaojian/Desktop/nodejs/config.js	/^var config={$/;"	property	line:1
+config.username	/Users/gaojian/Desktop/nodejs/config.js	/^  database:"node",$/;"	property	line:2
+config.password	/Users/gaojian/Desktop/nodejs/config.js	/^  username:"root",$/;"	property	line:3
+config.host	/Users/gaojian/Desktop/nodejs/config.js	/^  password:"",$/;"	property	line:4
+config.port	/Users/gaojian/Desktop/nodejs/config.js	/^  host: 'localhost', \/\/ 主机名$/;"	property	line:5
+defineModel	/Users/gaojian/Desktop/nodejs/db.js	/^function defineModel(name,attributes){$/;"	function	line:19
+attrs.type	/Users/gaojian/Desktop/nodejs/db.js	/^      attrs[key] = {$/;"	property	line:28
+attrs.allowNull	/Users/gaojian/Desktop/nodejs/db.js	/^                type: value,$/;"	property	line:29
+attrs.id.type	/Users/gaojian/Desktop/nodejs/db.js	/^  attrs.id = {$/;"	property	line:34
+attrs.id.primaryKey	/Users/gaojian/Desktop/nodejs/db.js	/^      type: ID_TYPE,$/;"	property	line:35
+defineModel	/Users/gaojian/Desktop/nodejs/db.js	/^function defineModel(name,attributes){$/;"	function	line:19
+exp.defineModel	/Users/gaojian/Desktop/nodejs/db.js	/^  var exp = {$/;"	property	line:47
+exp.sync	/Users/gaojian/Desktop/nodejs/db.js	/^      defineModel: defineModel,$/;"	property	line:48
+addController	/Users/gaojian/Desktop/nodejs/controller.js	/^function addController(router,dir){$/;"	function	line:7
+addController	/Users/gaojian/Desktop/nodejs/controller.js	/^function addController(router,dir){$/;"	function	line:7
+addMapping	/Users/gaojian/Desktop/nodejs/controller.js	/^function addMapping(router,mapping){$/;"	function	line:26
+addMapping	/Users/gaojian/Desktop/nodejs/controller.js	/^function addMapping(router,mapping){$/;"	function	line:26
+exports	/Users/gaojian/Desktop/nodejs/controller.js	/^module.exports=function (dir){$/;"	function	line:42
+module.exports	/Users/gaojian/Desktop/nodejs/controller.js	/^}$/;"	function	line:40
+selectUser	/Users/gaojian/Desktop/nodejs/controllers/login.js	/^var selectUser = require("..\/dao\/user");$/;"	variable	line:3
+module.exports.POST /signin	/Users/gaojian/Desktop/nodejs/controllers/login.js	/^module.exports={$/;"	property	line:32
+module.exports.selectGoodsList	/Users/gaojian/Desktop/nodejs/dao/goods.js	/^module.exports={$/;"	property	line:52
+module.exports.selectGoodsByTypeId	/Users/gaojian/Desktop/nodejs/dao/goods.js	/^  selectGoodsList:selectGoodsList,$/;"	property	line:53
+module.exports.selectGoodsById	/Users/gaojian/Desktop/nodejs/dao/goods.js	/^  selectGoodsByTypeId:selectGoodsByTypeId,$/;"	property	line:54
+module.exports.selectGoodsByNameLike	/Users/gaojian/Desktop/nodejs/dao/goods.js	/^  selectGoodsById:selectGoodsById,$/;"	property	line:55
+module.exports.GET /selectGoodsTypeList	/Users/gaojian/Desktop/nodejs/controllers/goods.js	/^module.exports={$/;"	property	line:118
+module.exports.POST /selectGoodsList	/Users/gaojian/Desktop/nodejs/controllers/goods.js	/^  "GET \/selectGoodsTypeList":selectGoodsTypeList,$/;"	property	line:119
+module.exports.POST /selectGoodsByTypeId	/Users/gaojian/Desktop/nodejs/controllers/goods.js	/^  "POST \/selectGoodsList":selectGoodsList,$/;"	property	line:120
+module.exports.POST /selectGoodsByNameLike	/Users/gaojian/Desktop/nodejs/controllers/goods.js	/^  "POST \/selectGoodsByTypeId":selectGoodsByTypeId,$/;"	property	line:121
+module.exports.POST /addShoppingCard	/Users/gaojian/Desktop/nodejs/controllers/shoppingCard.js	/^module.exports={$/;"	property	line:216
+module.exports.POST /selectShoppingCardByUserId	/Users/gaojian/Desktop/nodejs/controllers/shoppingCard.js	/^  "POST \/addShoppingCard":addShoppingCard,$/;"	property	line:217
+module.exports.POST /selectTotalPrice	/Users/gaojian/Desktop/nodejs/controllers/shoppingCard.js	/^  "POST \/selectShoppingCardByUserId":selectShoppingCardByUserId,$/;"	property	line:218
+module.exports.POST /selectShoppingCardGoodsById	/Users/gaojian/Desktop/nodejs/controllers/shoppingCard.js	/^  "POST \/selectTotalPrice":selectTotalPrice,$/;"	property	line:219
+module.exports.POST /subShoppingCard	/Users/gaojian/Desktop/nodejs/controllers/shoppingCard.js	/^  "POST \/selectShoppingCardGoodsById":selectShoppingCardGoodsById,$/;"	property	line:220
+module.exports.POST /delectShoppingCard	/Users/gaojian/Desktop/nodejs/controllers/shoppingCard.js	/^  "POST \/subShoppingCard":subShoppingCard,$/;"	property	line:221
+module.exports.updateShoppingCard	/Users/gaojian/Desktop/nodejs/dao/shoppingCard.js	/^module.exports={$/;"	property	line:61
+module.exports.insertShoppingCard	/Users/gaojian/Desktop/nodejs/dao/shoppingCard.js	/^  updateShoppingCard:updateShoppingCard,$/;"	property	line:62
+module.exports.selectShoppingCard	/Users/gaojian/Desktop/nodejs/dao/shoppingCard.js	/^  insertShoppingCard:insertShoppingCard,$/;"	property	line:63
+module.exports.selectShoppingCardByUserId	/Users/gaojian/Desktop/nodejs/dao/shoppingCard.js	/^  selectShoppingCard:selectShoppingCard,$/;"	property	line:64
+module.exports.delectShoppingCard	/Users/gaojian/Desktop/nodejs/dao/shoppingCard.js	/^  selectShoppingCardByUserId:selectShoppingCardByUserId,$/;"	property	line:65

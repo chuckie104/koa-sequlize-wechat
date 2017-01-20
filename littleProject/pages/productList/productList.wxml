@@ -1,0 +1,89 @@
+
+<view class="productList">
+  
+    <view class="productListTop clearfix">
+            <view class="productListSearchBox fl">
+                <view class="fl searchLogo">       
+                </view>
+                <view class="fl">
+                <input 
+                placeholder="输入菜名"
+                class="searchInput"
+                bindinput="searchProduct"/></view>          
+            </view> 
+            <view class="fl top_text">
+                 <view class="fl spLogo"
+                 bindtap="toShoppingCard">  
+                 <text class="spNum"> {{shoppingCardTotalNumber}}   </text> 
+                  
+                </view>
+                <view class="productText fl">
+                    <text class="priceP">共¥{{totalPrice}}元</text>
+                    <view class="emsPrice">另需付配送费{{totalCarryPrice}}元</view>
+                </view>
+            </view>
+    </view>
+
+  
+    <view class="productListMiddle clearfix">
+            <view class="productListAside fl">
+                <scroll-view 
+                scroll-y="true"
+                style=" height: 1084rpx;"
+                >
+                    <view wx:for="{{typeArray}}"
+                             class="menuType {{selectTypeArray[index]?'menuTypeActive':''}}"
+                             data-index="{{index}}"
+                             data-id="{{item.id}}"
+                             bindtap="selectGoodsByTypeId"
+                             >
+                            {{item.name}}
+                    </view>
+
+                </scroll-view> 
+            </view>
+            <view class="productListRight fr">
+            <view class="vipSelect clearfix">          
+                <view class="fl {{isVipSelect[index]?                                                   'selectVipChildActive':'selectVipChild'}}" 
+                wx:for="{{vipSelect}}"
+                bindtap="vipSelect"
+                data-index="{{index}}">
+                    {{item}}
+                </view>              
+            </view>
+            <view class="productMenu">
+                 <scroll-view 
+                scroll-y="true"
+                style=" height:1000rpx;"
+                >
+                    <!--<view  class="menuList">
+                            
+                    </view>-->
+                    <view wx:for="{{productMenuArray}}" class="productListBox">
+                        <view class="hotProductLogo" wx:if="{{item.hotState==1}}"></view>
+                        <image src="{{item.imgUrl}}"                                            class="productMenuImg fl"/>
+                        <view class="fl productMenuInfo">
+                            
+                             <view class="pName">{{item.name}}</view>
+                             <view class="pInfo">{{item.title}}</view>
+                             <view class="pPrice">
+                             <text>¥{{item.discountPrice}}</text>
+                             <text class="costPrice">¥{{item.price}}</text>
+                             </view>
+                             <view class="pStock">库存({{item.stock}})</view>
+                             <view class="addProductBtn" 
+                             bindtap="addShoppingCard"
+                             data-index="{{index}}"
+                             data-id="{{item.id}}"
+                             data-name="{{item.name}}">
+                                +
+                             </view>
+                        </view>
+                    </view>
+                </scroll-view> 
+            </view>
+            
+            </view>
+    </view>
+   
+</view>

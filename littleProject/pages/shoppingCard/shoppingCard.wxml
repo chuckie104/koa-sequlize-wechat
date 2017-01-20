@@ -1,0 +1,77 @@
+
+<view>
+      <view class="productListTop clearfix">
+            <view class="productListSearchBox fl">
+                <view class="fl searchLogo">       
+                </view>
+                <view class="fl">
+                <input 
+                placeholder="输入菜名"
+                class=" searchInput"
+                bindinput="searchProduct"/></view>          
+            </view> 
+            <view class="fl top_text">
+                 <view class="fl spLogo">  
+                 <text class="spNum"> {{shoppingCardTotalNumber}}   </text> 
+                  
+                </view>
+                <view class="productText fl">
+                    <text class="priceP">共¥{{totalPrice}}元</text>
+                    <view class="emsPrice">另需付配送费{{totalCarryPrice}}元</view>
+                </view>
+            </view>
+    </view>   
+    <view class="shoppingCardCenter">
+            <scroll-view style="height:1020rpx;">
+                <view wx:for="{{shoppingCardArray}}" class="shoppingCardList">
+                    <view class="shoppingCardListWrap clearfix">
+                        <image src="{{item.imgUrl}}"                                            class="productMenuImg fl"/>
+                        <view class="fl menu_content">
+                            <view class="menO clearfix">
+                                <view class="fl shopName">
+                                    {{item.name}}
+                                </view>
+                                <view 
+                                    wx:if="{{item.bogoState=='1'}}"
+                                    class="maiyisongyi fl"
+                                    style="margin-left:20rpx;">
+                                    买一送一
+                                </view>
+                            </view>
+                            <view class="menuT">
+                                {{item.title}}
+                            </view>
+                            <view class="menuM">
+                                <text>¥</text>
+                                <text class="price">{{item.price}}</text>
+                            </view>
+                            <view class="menuK">
+                                库存:{{item.stock}}
+                            </view>
+                            <view class="control clearfix">
+                                <view 
+                                data-name ="{{item.name}}"
+                                data-id="{{item.id}}"
+                                data-index="{{index}}"
+                                bindtap="addNumber"
+                                class="fl addlogo"></view>
+                                <view class="mainColor fl">
+                                    <text>{{item.number}}</text>
+                                    <text>份</text>
+                                </view>
+                                <view 
+                                data-index="{{index}}"
+                                data-name ="{{item.name}}"
+                                data-id="{{item.id}}"
+                                bindtap="subNumber"
+                                class="dellogo fl"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+    </view>
+    <view class="sC_btn">
+        结算
+    </view>
+</view>

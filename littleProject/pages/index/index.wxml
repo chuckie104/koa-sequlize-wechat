@@ -1,0 +1,34 @@
+<!--index.wxml-->
+
+<view class="login">
+    <view class="loginUsernameBox clearfix">
+         <text class="fl loginText">用户名:</text>
+                <input 
+                type="text"
+                placeholder="请输入用户名" 
+                placeholder-style="color:#888;"
+                class="loginUserName"
+                class="fl loginUserName"
+                value="{{username}}"
+                bindinput="getUsername" />
+    
+    </view>
+     <view class="loginPasswordBox clearfix">
+         <text class="fl loginText">密码:</text>
+                <input 
+                type="text"
+                placeholder="请输入密码" 
+                placeholder-style="color:#888;"
+                class="loginUserName"
+                class="fl loginUserName"
+                value="{{password}}"
+                bindinput="getPassword" />
+    
+    </view>
+    <view>
+         <button style="margin-top:40rpx;" bindtap="login">
+            登录
+         </button>
+    </view>
+</view>
+
