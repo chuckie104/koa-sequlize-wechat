@@ -57,3 +57,47 @@ module.exports.insertShoppingCard	/Users/gaojian/Desktop/nodejs/dao/shoppingCard
 module.exports.selectShoppingCard	/Users/gaojian/Desktop/nodejs/dao/shoppingCard.js	/^  insertShoppingCard:insertShoppingCard,$/;"	property	line:63
 module.exports.selectShoppingCardByUserId	/Users/gaojian/Desktop/nodejs/dao/shoppingCard.js	/^  selectShoppingCard:selectShoppingCard,$/;"	property	line:64
 module.exports.delectShoppingCard	/Users/gaojian/Desktop/nodejs/dao/shoppingCard.js	/^  selectShoppingCardByUserId:selectShoppingCardByUserId,$/;"	property	line:65
+setStorage	/Users/gaojian/Desktop/littleProject/nodejs/util.js	/^function setStorage(n,v){$/;"	function	line:9
+getStorage	/Users/gaojian/Desktop/littleProject/nodejs/util.js	/^function getStorage(n){$/;"	function	line:13
+getStorage	/Users/gaojian/Desktop/littleProject/nodejs/util.js	/^function getStorage(n){$/;"	function	line:13
+get_string_time	/Users/gaojian/Desktop/littleProject/nodejs/util.js	/^function get_string_time(booking_starttime){$/;"	function	line:61
+get_string_time	/Users/gaojian/Desktop/littleProject/nodejs/util.js	/^function get_string_time(booking_starttime){$/;"	function	line:61
+module.exports.setStorage	/Users/gaojian/Desktop/littleProject/nodejs/util.js	/^module.exports={$/;"	property	line:76
+module.exports.getStorage	/Users/gaojian/Desktop/littleProject/nodejs/util.js	/^  setStorage:setStorage,$/;"	property	line:77
+module.exports.totalPrice	/Users/gaojian/Desktop/littleProject/nodejs/util.js	/^  getStorage:getStorage,$/;"	property	line:78
+module.exports.get_string_time	/Users/gaojian/Desktop/littleProject/nodejs/util.js	/^  totalPrice:totalPrice,$/;"	property	line:79
+module.exports.selectGoodsList	/Users/gaojian/Desktop/littleProject/nodejs/dao/goods.js	/^module.exports={$/;"	property	line:53
+module.exports.selectGoodsByTypeId	/Users/gaojian/Desktop/littleProject/nodejs/dao/goods.js	/^  selectGoodsList:selectGoodsList,$/;"	property	line:54
+module.exports.selectGoodsById	/Users/gaojian/Desktop/littleProject/nodejs/dao/goods.js	/^  selectGoodsByTypeId:selectGoodsByTypeId,$/;"	property	line:55
+module.exports.selectGoodsByNameLike	/Users/gaojian/Desktop/littleProject/nodejs/dao/goods.js	/^  selectGoodsById:selectGoodsById,$/;"	property	line:56
+module.exports.updateShoppingCard	/Users/gaojian/Desktop/littleProject/nodejs/dao/shoppingCard.js	/^module.exports={$/;"	property	line:85
+module.exports.insertShoppingCard	/Users/gaojian/Desktop/littleProject/nodejs/dao/shoppingCard.js	/^  updateShoppingCard:updateShoppingCard,$/;"	property	line:86
+module.exports.selectShoppingCard	/Users/gaojian/Desktop/littleProject/nodejs/dao/shoppingCard.js	/^  insertShoppingCard:insertShoppingCard,$/;"	property	line:87
+module.exports.selectShoppingCardByUserId	/Users/gaojian/Desktop/littleProject/nodejs/dao/shoppingCard.js	/^  selectShoppingCard:selectShoppingCard,$/;"	property	line:88
+module.exports.delectShoppingCard	/Users/gaojian/Desktop/littleProject/nodejs/dao/shoppingCard.js	/^  selectShoppingCardByUserId:selectShoppingCardByUserId,$/;"	property	line:89
+module.exports.selectShoppingCardByLike	/Users/gaojian/Desktop/littleProject/nodejs/dao/shoppingCard.js	/^  delectShoppingCard :delectShoppingCard,$/;"	property	line:90
+module.exports.destoryShoppingCard	/Users/gaojian/Desktop/littleProject/nodejs/dao/shoppingCard.js	/^  selectShoppingCardByLike:selectShoppingCardByLike,$/;"	property	line:91
+sequelize	/Users/gaojian/Desktop/littleProject/nodejs/dao/transaction.js	/^var sequelize = require("..\/transaction");$/;"	variable	line:4
+createOrder	/Users/gaojian/Desktop/littleProject/nodejs/dao/transaction.js	/^var createOrder = require(".\/order").createOrder;$/;"	variable	line:7
+createOrderdsc	/Users/gaojian/Desktop/littleProject/nodejs/dao/transaction.js	/^var createOrderdsc = require(".\/orderdsc").createOrderdsc;$/;"	variable	line:9
+destoryShoppingCard	/Users/gaojian/Desktop/littleProject/nodejs/dao/transaction.js	/^var destoryShoppingCard = require(".\/shoppingCard").destoryShoppingCard;$/;"	variable	line:12
+module.exports.orderTransaction	/Users/gaojian/Desktop/littleProject/nodejs/dao/transaction.js	/^module.exports={$/;"	property	line:39
+module.exports.createOrder	/Users/gaojian/Desktop/littleProject/nodejs/dao/order.js	/^module.exports={$/;"	property	line:38
+module.exports.selectOrderBynumber	/Users/gaojian/Desktop/littleProject/nodejs/dao/order.js	/^  createOrder:createOrder,$/;"	property	line:39
+module.exports.createOrderdsc	/Users/gaojian/Desktop/littleProject/nodejs/dao/orderdsc.js	/^module.exports={$/;"	property	line:30
+module.exports.selectOrderdscBynumber	/Users/gaojian/Desktop/littleProject/nodejs/dao/orderdsc.js	/^  createOrderdsc:createOrderdsc,$/;"	property	line:31
+module.exports.POST /createOrder	/Users/gaojian/Desktop/littleProject/nodejs/controllers/order.js	/^module.exports={$/;"	property	line:180
+module.exports.POST /selectOrder	/Users/gaojian/Desktop/littleProject/nodejs/controllers/order.js	/^  "POST \/createOrder":createOrder,$/;"	property	line:181
+module.exports.POST /selectAddress	/Users/gaojian/Desktop/littleProject/nodejs/controllers/userAddress.js	/^module.exports={$/;"	property	line:38
+module.exports.selectUserAddressByUserId	/Users/gaojian/Desktop/littleProject/nodejs/dao/userAddress.js	/^module.exports={$/;"	property	line:21
+module.exports.GET /selectGoodsTypeList	/Users/gaojian/Desktop/littleProject/nodejs/controllers/goods.js	/^module.exports={$/;"	property	line:117
+module.exports.POST /selectGoodsList	/Users/gaojian/Desktop/littleProject/nodejs/controllers/goods.js	/^  "GET \/selectGoodsTypeList":selectGoodsTypeList,$/;"	property	line:118
+module.exports.POST /selectGoodsByTypeId	/Users/gaojian/Desktop/littleProject/nodejs/controllers/goods.js	/^  "POST \/selectGoodsList":selectGoodsList,$/;"	property	line:119
+module.exports.POST /selectGoodsByNameLike	/Users/gaojian/Desktop/littleProject/nodejs/controllers/goods.js	/^  "POST \/selectGoodsByTypeId":selectGoodsByTypeId,$/;"	property	line:120
+selectUser	/Users/gaojian/Desktop/littleProject/nodejs/controllers/login.js	/^var selectUser = require("..\/dao\/user");$/;"	variable	line:3
+setStorage	/Users/gaojian/Desktop/littleProject/nodejs/controllers/login.js	/^var setStorage =require("..\/util").setStorage;$/;"	variable	line:4
+module.exports.POST /signin	/Users/gaojian/Desktop/littleProject/nodejs/controllers/login.js	/^module.exports={$/;"	property	line:35
+constructor	/Users/gaojian/Desktop/littleProject/nodejs/session.js	/^    constructor() {$/;"	function	line:5
+_callee4	/Users/gaojian/Desktop/littleProject/nodejs/test.js	/^        var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4(ctx, next) {$/;"	function	line:8
+_callee4$	/Users/gaojian/Desktop/littleProject/nodejs/test.js	/^            return _regenerator2.default.wrap(function _callee4$(_context4) {$/;"	function	line:10
+switch	/Users/gaojian/Desktop/littleProject/nodejs/test.js	/^                    switch (_context4.prev = _context4.next) {$/;"	function	line:12

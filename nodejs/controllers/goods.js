@@ -16,8 +16,6 @@ const SelectUser = require("../dao/user");
 const getStorage =require("../util").getStorage;
 
 
-//获取缓存
-const setStorage =require("../util").setStorage;
 
 //查询产品分类接口
 let selectGoodsTypeList =async(ctx,next)=>{
@@ -48,6 +46,7 @@ let selectGoodsList =async(ctx,next)=>{
     responseJson.object = "";
     ctx.response.body =responseJson;
   }else {
+    console.log(getStorage("userId")+"登陆后获取数据");
     responseJson.msg="查询成功";
     responseJson.status="1";
     responseJson.object = object;
@@ -91,7 +90,7 @@ let selectGoodsByNameLike = async(ctx,next)=>{
 
     try {
       let goodsArray = await SelectGoodsByNameLike(name);
-      
+
       if(goodsArray==undefined){
         responseJson.msg="没数据";
         responseJson.status="2";

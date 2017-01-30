@@ -13,7 +13,7 @@ Page({
   },
   //页面加载ajax
   onReady:function(){
-    let level = wx.getStorageSync('level');    
+     let level = wx.getStorageSync('level');    
      let discount=switchLevel(level); 
      let userId = wx.getStorageSync('userId'); 
      let that =this;
@@ -106,6 +106,20 @@ Page({
      }
      
     
+   },
+   //生成订单
+   createOrder:function(event){
+      let userId = wx.getStorageSync('userId');
+
+     let that = this;
+     //总价钱
+     let amount = that.data.totalPrice+that.data.totalCarryPrice;
+
+     ajax("http://localhost:3000/createOrder","POST",{ userId:userId,            amount:amount}).then((data)=>{
+       
+     })
+     
+      //  ajax("http://localhost:3000/test","POST",{})
    },
 
    //减少购物车数量

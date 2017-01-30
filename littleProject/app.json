@@ -1,9 +1,13 @@
 {
   "pages":[
-    
+    "pages/index/index"  , 
     "pages/productList/productList",
-    "pages/shoppingCard/shoppingCard",
-    "pages/index/index"  
+    "pages/order/order",
+       
+    
+    "pages/shoppingCard/shoppingCard"  
+     
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,142 @@
+
+<view class="body">
+    <view class="newAddress">
+        <view class="newAddressWrap">
+            <view class="addressTop clearfix">
+                <view class="addressTopBox fl">
+                 <picker 
+                 range="{{addressArray}}"
+                 value="{{pickIndex}}"
+                 bindchange="bindPickerChang">
+                    <view class="picker">{{addressArray[pickIndex]}} </view>
+                 </picker>
+                </view>
+                <view class="toNewAddress fr" >
+                    新建地址
+                </view>
+            </view>
+         <view wx:if="{{isShowAddress}}">
+            <view class="addressinput clearfix " >
+                <view class="fl newAddressAside">
+                    {{address.address}}
+                </view>
+                <view class="fr newAddressAsideInput">
+                    {{selectAddress.province+selectAddress.city+selectAddress.address}}
+                </view>
+            </view>
+             <view class="addressinput clearfix " >
+                <view class="fl newAddressAside">
+                    {{address.name}}
+                </view>
+                <view class="fr newAddressAsideInput">
+                    {{selectAddress.name}}
+                </view>
+            </view>
+             <view class="addressinput clearfix " >
+                <view class="fl newAddressAside">
+                    {{address.phone}}
+                </view>
+                <view class="fr newAddressAsideInput">
+                    {{selectAddress.phone}}
+                </view>
+            </view>
+        </view>
+          
+        </view>
+    </view>
+    <view class="sureOrderInfo">
+        <view class="sureOrderInfoWrap">
+            <view class="sureOrderInfoTop">订单信息</view>
+            <view class="orderlist clearfix" wx:for="{{productInfoList}}">
+                <view class="orderName fl">{{item.goodsName}}</view>
+                <view class="orderNum fl">X{{item.number}}</view>
+                <view class="orderPrice fl">{{item.price}}</view>
+            </view>
+            <view class="sureOrderTotal clearfix">
+
+                <view class="totalText fl">运费</view>
+                <view class="totalPrice fr">
+                    <text>¥</text>
+                    <text class="allcarryCost">{{totalCarryPrice}}</text>
+                </view>
+            </view>
+            <view class="sureOrderTotal clearfix">
+                    <view class="totalText fl">总计</view>
+                <view class="totalPrice fr">
+                    <text>¥</text>
+                    <text class="allcarryCost">{{totalPrice}}</text>
+                </view>
+            </view>
+         </view>
+    </view>
+    <view class="buyerDowm">
+        <view class="sureOrderInfoTop">
+            留言
+        </view>
+        <view class="buyerText">
+                <textarea id="buyerText"
+                    placeholder="留言不能超过50个字"
+                        maxlength="50" />
+         </view>
+    </view>
+    <view class="concatStore">
+            <view class="fl concatStoreText">积分抵扣</view>
+            <view class="fl concatStoreTextGrey">
+                (当前积分可抵扣<text>moeny</text>块钱,仅适用于微信支付)
+            </view>
+            <view class="selectZhifu fr selectZhifuActive"></view>
+    </view>
+    <view class="concatStore">
+            <view class="fl concatStoreText">发票抬头</view>
+            <view class="fl concatStoreTextGrey">
+                如需开发票请输入发票抬头并选择配送地址
+            </view>
+    </view>
+    <view class="newAddress">
+        <view class="newAddressWrap">
+            <view class="addressTop clearfix">
+                <view class="addressTopBox fl">
+                 <picker 
+                 range="{{addressArray}}"
+                 value="{{pickBindIndex}}"
+                 bindchange="bindPickerBindChang">
+                    <view class="picker">{{addressArray[pickBindIndex]}} </view>
+                 </picker>
+                </view>
+                <view class="toNewAddress fr" >
+                    新建地址
+                </view>
+            </view>
+            <view wx:if="{{isShowAddress}}">
+            <view class="addressinput clearfix " >
+                <view class="fl newAddressAside">
+                    {{address.address}}
+                </view>
+                <view class="fr newAddressAsideInput">
+                    {{selectBindAddress.province+selectBindAddress.city+selectBindAddress.address}}
+                </view>
+            </view>
+             <view class="addressinput clearfix " >
+                <view class="fl newAddressAside">
+                    {{address.name}}
+                </view>
+                <view class="fr newAddressAsideInput">
+                    {{selectBindAddress.name}}
+                </view>
+            </view>
+             <view class="addressinput clearfix " >
+                <view class="fl newAddressAside">
+                    {{address.phone}}
+                </view>
+                <view class="fr newAddressAsideInput">
+                    {{selectBindAddress.phone}}
+                </view>
+            </view>
+        </view>
+        </view>
+    </view>
+    <view class="sureOrderBottom clearfix">
+        <view class="fl weChat">微信支付</view>
+        <view class="fl balance">余额支付</view>
+    </view>
+</view>

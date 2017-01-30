@@ -2,6 +2,10 @@ const fs= require("fs");
 
 const db = require("./db");
 
+const path = require("path");
+
+
+
 let files = fs.readdirSync(__dirname+"/modules");
 
 let filesArray = files.filter((f)=>{

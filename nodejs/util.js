@@ -57,8 +57,25 @@ var totalPrice=async (userId)=>{
 }
 
 
+//时间戳转字符串
+function get_string_time(booking_starttime){
+  var eatTime =booking_starttime;
+      eatTime =new Date(eatTime);
+      if(eatTime.getMinutes()==0){
+      var min="00";
+    }else if(eatTime.getMinutes()>0&&eatTime.getMinutes()<10){
+      var min ="0"+eatTime.getMinutes();
+    }
+      else{
+      var min =eatTime.getMinutes();
+    }
+      eatTime=eatTime.getFullYear()+"-"+(eatTime.getMonth() + 1)+"-"+eatTime.getDate()+" "+eatTime.getHours()+":"+min;
+      return eatTime;
+}
+
 module.exports={
   setStorage:setStorage,
   getStorage:getStorage,
-  totalPrice:totalPrice
+  totalPrice:totalPrice,
+  get_string_time:get_string_time
 }

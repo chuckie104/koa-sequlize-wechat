@@ -5,7 +5,7 @@ const Goods = Model.goods;
 
 //查询产品所有列表
 let selectGoodsList = async ()=>{
-  
+
   let goodsList = await Goods.findAll({
       where:{
         saleState:"1"
@@ -34,6 +34,7 @@ let selectGoodsById  = async(id)=>{
       }
     }
   })
+  
   return good;
 }
 

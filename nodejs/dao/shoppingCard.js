@@ -71,6 +71,15 @@ var delectShoppingCard =async(userId,goodsId)=>{
     })
 }
 
+//清空购物车
+var destoryShoppingCard =async(userId)=>{
+    await  ShoppingCard.destroy({
+      where:{
+        userId:userId,
+      }
+    })
+}
+
 
 
 module.exports={
@@ -79,5 +88,6 @@ module.exports={
   selectShoppingCard:selectShoppingCard,
   selectShoppingCardByUserId:selectShoppingCardByUserId,
   delectShoppingCard :delectShoppingCard,
-  selectShoppingCardByLike:selectShoppingCardByLike
+  selectShoppingCardByLike:selectShoppingCardByLike,
+  destoryShoppingCard:destoryShoppingCard
 }

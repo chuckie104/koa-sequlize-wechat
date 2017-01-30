@@ -1,0 +1,214 @@
+
+page{
+    width: 100%;
+    background-color: #f7f6f2;
+    height: 100%;
+}
+
+.newAddress{
+    width:710rpx;
+    padding: 20rpx;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+}
+
+.newAddressWrap{
+
+}
+
+.addressTop{
+    height: 70rpx;
+    border-bottom: 2rpx solid #cba461;
+}
+
+.addressTopBox{
+    margin-top: 8rpx;
+    width: 180rpx;
+    height: 55rpx;
+    position: relative;
+    line-height: .55rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding-left: 20rpx;
+}
+
+.addressTopBox::after{
+    content: "";
+    display: block;
+    width: 30rpx;
+    height: 55rpx;
+    position: absolute;
+    right: 0px;
+    top: 0rpx;
+    background: url("../../images/xialajiantouhui.png") no-repeat;
+    background-size: 18rpx auto;
+    background-position: 0 center;
+}
+
+picker{
+    width: 100%;
+    height: 100%;
+    font-size: 24rpx;
+    line-height: 55rpx;
+}
+
+.picker{
+    
+    widows: 100%;
+    height: 100%;
+}
+
+.toNewAddress{
+    line-height: 70rpx;
+    color: #cba461;
+    font-size: 26rpx;
+}
+
+.addressinput{
+    height: 90rpx;
+    border-bottom: 2rpx dashed #cba461;
+}
+
+.newAddressAside{
+    width: 180rpx;
+    line-height: 88rpx;
+    color: #858585;
+    font-size: 26rpx;
+}
+
+.newAddressAsideInput{
+    width: 500rpx;
+    height: 100%;
+    line-height: 98rpx;
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+    overflow:hidden;
+    font-size: 26rpx;
+}
+
+.sureOrderInfo{
+    margin-bottom: 20rpx;
+    width: 100%;
+    background-color: #fff;
+}
+
+.sureOrderInfoWrap{
+    padding: 20rpx;
+    background-color: #fff;
+    padding-bottom: 0rpx;
+}
+
+.sureOrderInfoTop{
+    height: 70rpx;
+    line-height: 68rpx;
+    color: #000;
+    font-size: 30rpx;
+    border-bottom: 2rpx solid #cba461;
+}
+
+.sureOrderTotal{
+    width:100%;
+    height: 90rpx;
+    color: #cba461;
+    font-size: 30rpx;
+    line-height: 90rpx;
+    border-bottom: 2rpx solid #cba461;
+}
+
+.buyerDowm{
+    margin: 20rpx 0;
+    padding: 20rpx;
+    width: 710rpx;
+    background: #fff;
+  }
+
+  #buyerText{
+    width: 100%;
+    height: 200rpx;
+    line-height: 40rpx;
+    font-size: 30rpx;
+    padding: 10rpx;
+
+  }
+
+  .sureOrderInfoTop{
+    height: 70rpx;
+    line-height:68rpx;
+    color: #000;
+    font-size: 30rpx;
+    border-bottom: 2rpx solid #cba461;
+  }
+
+  .concatStore{
+    padding: 20rpx;
+    background-color: #fff;
+    height:50rpx;
+    width: 710rpx;
+    line-height: 50rpx;
+    margin-bottom: 20rpx;
+  }
+
+  .concatStoreText{
+      color: #cba461;
+      font-size: 30rpx;
+  }
+
+  .concatStoreTextGrey{
+      font-size:22rpx;
+        color: #bbb;
+        margin-left: 20rpx;
+  }
+
+  .selectZhifu{
+    width: 30rpx;
+    height: 30rpx;
+    background: url("../../images/select.png") no-repeat;
+    background-size: contain;
+    margin-top:10rpx;
+  }
+
+  .sureOrderBottom{
+      margin-top: 100rpx;
+        width: 100%;
+  }
+
+    .weChat{
+    width: 50%;
+    color: #cba461;
+    background-color: #fff;
+    text-align: center;
+    line-height: 90rpx;
+  }
+
+  .balance{
+    width: 50%;
+    color: #fff;
+    background-color: #cba461;
+    text-align: center;
+       line-height: 90rpx;
+  }
+
+  .orderName{
+      width: 500rpx;
+      color: #555555;
+
+  }
+
+  .orderNum{
+      width: 100rpx;
+      color: #bbb;
+      text-align: left;
+  }
+
+
+  .orderPrice{
+      text-align: right;
+      color: #cba461;
+      width:100rpx;
+  }
+
+  .orderlist{
+      font-size: 28rpx;
+    line-height: 68rpx;
+    border-bottom: 2rpx dashed #cba461;
+  }

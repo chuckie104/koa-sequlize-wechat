@@ -14,3 +14,7 @@
 .clearfix{zoom:1;}
 .fl{float:left;display: block; }
 .fr{float:right;display: block;}
+body{
+  font-size: 26rpx;
+  color: #333;
+}

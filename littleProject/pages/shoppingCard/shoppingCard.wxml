@@ -71,7 +71,8 @@
                 </view>
             </scroll-view>
     </view>
-    <view class="sC_btn">
+    <view class="sC_btn"
+            bindtap="createOrder">
         结算
     </view>
 </view>
